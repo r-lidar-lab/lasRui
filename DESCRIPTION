@@ -1,0 +1,19 @@
+Package: lasRui
+Type: Package
+Version: 0.1.0
+Title: User Interface for visual programming of lasR pipelines
+Authors@R: c(
+    person("Jean-Romain", "Roussel", email = "jean-romain.roussel.1@ulaval.ca", role = c("aut", "cre", "cph")))
+Description: User Interface for visual programming of lasR pipeline. Drag and drop and connect stage to build pipelines interactively in a web app.
+URL: https://github.com/r-lidar/lasRui
+BugReports: https://github.com/r-lidar/lasRui/issues
+License: GPL (>= 3)
+Depends: R (>= 3.6.0), lasR (>= 0.9.0)
+Imports: 
+    shiny,
+    shinyjs,
+    future,
+    jsonlite
+RoxygenNote: 7.3.1
+Encoding: UTF-8
+Language: en-US
