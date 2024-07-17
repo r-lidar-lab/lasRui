@@ -9,6 +9,15 @@
 
 `lasRui` is a Shiny application for the `lasR` package that allows building complex pipelines using [visual programming](https://bitspark.de/blog/what-is-visual-programming) by dragging and dropping stages in a web interface and connecting the boxes.
 
+In the following example, we draw a pipeline where we (1) assign a collection of files to process, (2) create a `reader_las()` stage to read the point <kbd>cloud</kbd>, and (3) connect the <kbd>cloud</kbd> to two `rasterize()` stages to produce two rasters.
+
+``` r
+library(lasRui)
+lasRui()
+```
+
+![](./man/figures/ui.png)
+
 ## Installation
 
 ```r
@@ -27,16 +36,3 @@ install.packages('lasRui', repos = c('https://r-lidar.r-universe.dev', 'https://
 - :x: Error handling is minimal. It is possible to connect stages incorrectly and populate inputs poorly.
 - :x: Aborting the computation is not yet possible. There is a stop button, but it is not yet connected to any action.
 - :x: Software ergonomics have room for improvement.
-
-
-## Example
-
-In the following example, we draw a pipeline where we (1) assign a collection of files to process, (2) create a `reader_las()` stage to read the point <kbd>cloud</kbd>, and (3) connect the <kbd>cloud</kbd> to two `rasterize()` stages to produce two rasters.
-
-``` r
-library(lasRui)
-lasRui()
-```
-
-![](./man/figures/ui.png)
-
