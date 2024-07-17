@@ -17,14 +17,14 @@ install.packages('lasRui', repos = c('https://r-lidar.r-universe.dev', 'https://
 
 ## Features
 
-- :heavy_check_mark: Drag, drop, and connect `lasR` stages. Currently, only a restricted number of stages are available to prevent users from building overly complex pipelines. As the software becomes more stable, we will add more stages until all `lasR` features are mapped into `lasRui`.
-- :heavy_check_mark: Run the pipeline with a single click.
-- :heavy_check_mark: Auto-completion of some inputs.
-- :heavy_check_mark: Progress bar.
-- :heavy_check_mark: Save your pipeline in a `json` file to reload it later.
-- :negative_squared_cross_mark: Error handling is minimal. It is possible to connect stages incorrectly and populate inputs poorly.
-- :negative_squared_cross_mark: Aborting the computation is not yet possible. There is a stop button, but it is not yet connected to any action.
-- :negative_squared_cross_mark: Software ergonomics have room for improvement.
+- :white_check_mark: Drag, drop, and connect `lasR` stages. Currently, only a restricted number of stages are available to prevent users from building overly complex pipelines. As the software becomes more stable, we will add more stages until all `lasR` features are mapped into `lasRui`.
+- :white_check_mark: Run the pipeline with a single click.
+- :white_check_mark: Auto-completion of some inputs.
+- :white_check_mark: Progress bar.
+- :white_check_mark: Save your pipeline in a `json` file to reload it later.
+- :x: Error handling is minimal. It is possible to connect stages incorrectly and populate inputs poorly.
+- :x: Aborting the computation is not yet possible. There is a stop button, but it is not yet connected to any action.
+- :x: Software ergonomics have room for improvement.
 
 
 ## Example
@@ -37,12 +37,4 @@ lasRui()
 ```
 
 ![](./man/figures/ui.png)
-
-## Features
-
-- Drag and drop stages from the side menu
-- Connect stages organically; stages must be connected by similar icons/names
-- Save pipeline to a file
-- Load saved pipeline
-- Progress bar
 
