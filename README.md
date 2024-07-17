@@ -15,6 +15,8 @@
 install.packages('lasRui', repos = c('https://r-lidar.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
+⚠️ The user interface uses some remote javascript libraries and currently requires an internet connexion to work.
+
 ## Features
 
 - :white_check_mark: Drag, drop, and connect `lasR` stages. Currently, only a restricted number of stages are available to prevent users from building overly complex pipelines. As the software becomes more stable, we will add more stages until all `lasR` features are mapped into `lasRui`.
