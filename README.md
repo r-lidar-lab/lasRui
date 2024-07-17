@@ -9,7 +9,7 @@
 
 `lasRui` is a Shiny application for the `lasR` package that allows building complex pipelines using [visual programming](https://bitspark.de/blog/what-is-visual-programming) by dragging and dropping stages in a web interface and connecting the boxes.
 
-In the following example, we draw a pipeline where we (1) assign a collection of files to process, (2) create a `reader_las()` stage to read the point <kbd>cloud</kbd>, and (3) connect the <kbd>cloud</kbd> to two `rasterize()` stages to produce two rasters.
+In the following example, we draw a pipeline where we (1) assign a collection of files to process, (2) create a `reader_las()` stage to read the point-cloud, and (3) connect the point-cloud to two `rasterize()` stages to produce two rasters.
 
 ``` r
 library(lasRui)
@@ -24,11 +24,13 @@ lasRui()
 install.packages('lasRui', repos = c('https://r-lidar.r-universe.dev', 'https://cloud.r-project.org'))
 ```
 
-⚠️ The user interface uses some remote javascript libraries and currently requires an internet connexion to work.
+> [!WARNING]  
+> The user interface uses some remote javascript libraries and currently requires an internet connexion to work.
 
 ## Features
 
-- :white_check_mark: Drag, drop, and connect `lasR` stages. Currently, only a restricted number of stages are available to prevent users from building overly complex pipelines. As the software becomes more stable, we will add more stages until all `lasR` features are mapped into `lasRui`.
+- :white_check_mark: Drag, drop, and connect `lasR` stages.
+- :x: Currently, only a restricted number of stages are available to prevent users from building overly complex pipelines. As the software becomes more stable, we will add more stages until all `lasR` features are mapped into `lasRui`.
 - :white_check_mark: Run the pipeline with a single click.
 - :white_check_mark: Auto-completion of some inputs.
 - :white_check_mark: Progress bar.
